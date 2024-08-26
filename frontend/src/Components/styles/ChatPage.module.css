@@ -1,0 +1,106 @@
+.chatPage {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    background-color: white;
+}
+.sidebar {
+    background-color: #001f3f; /* Dark blue */
+    padding: 10px;
+    width: 300px;
+    max-height: 100vh; /* Ensure it doesn't exceed viewport height */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.newChatButton {
+    border: 2px dashed white;
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.chatList {
+    max-height: calc(100vh - 60px); /* Adjust based on the height of the button and padding */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.chatItem {
+    color: white;
+    padding: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.chatItem:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly lighter on hover */
+}
+
+.activeChat {
+    color: white;
+    padding: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    background-color: #007bff;
+}
+.chatPage {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+.spin {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.messageList {
+    flex-grow: 1;
+    border: 1px solid #ccc;
+    margin: 10px;
+    overflow-y: auto;
+    max-height: calc(100vh - 120px); /* Adjust based on other elements' height */
+}
+.messagesContainer {
+    padding: 10px;
+}
+.fixed-width-sidebar {
+    width: 250px;
+}
+
+.fixed-width-pdfviewer {
+    width: 500px;
+}
+
+.fixed-width-chat {
+    width: 500px;
+}
+.chat {
+    width: 500px; /* Fixed width for Chat component */
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.form-group {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+.form-control {
+    width: auto; /* Ensure the input field does not fill the entire width */
+}
+
+.btn {
+    width: auto; /* Ensure the button does not fill the entire width */
+}
