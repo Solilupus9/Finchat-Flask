@@ -5,6 +5,10 @@ Switch to backend folder
 ```
 cd backend
 ```
+Install required python libraries
+```
+pip install -r requirements.txt
+```
 Run flask app.py
 ```
 python3 app.py
