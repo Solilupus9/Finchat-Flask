@@ -1,0 +1,15 @@
+flask
+flask-cors
+flask-sqlalchemy
+flask-login
+flask-migrate
+pymupdf
+psycopg2
+langchain
+boto3
+botocore
+google-generativeai
+langchain-community
+langchain-core
+langchain-text-splitters
+pinecone
