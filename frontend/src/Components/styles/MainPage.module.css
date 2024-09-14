@@ -1,0 +1,43 @@
+.mainPage {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(111, 9, 121, 1) 43%, rgba(113, 0, 255, 1) 100%);
+    height: 100vh;
+}
+
+.topRight {
+    width: 50px;
+    height: 50px;
+}
+
+.centerContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.textWhite {
+    color: white;
+    font-weight: bold;
+}
+
+.userInfoBox {
+    position: absolute;
+    top: 65px;
+    right: 40px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.spin {
+    animation: spin 1s linear infinite;
+}
